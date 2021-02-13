@@ -1,0 +1,10 @@
+#!/bin/sh
+
+USER=fullstacksjs
+
+if [ -z "$1" ]; then
+  echo "Error: please specify version"
+  exit 1
+fi
+
+docker build --tag $USER/lerna3:$1 -f ./lerna-03/Dockerfile .
