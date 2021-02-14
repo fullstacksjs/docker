@@ -7,4 +7,4 @@ if [ -z "$1" ]; then
   exit 1
 fi
 
-docker build --tag $USER/lerna3:$1 -f ./lerna-03/Dockerfile .
+docker build --tag $USER/lerna3:$1 -f ./lerna3/Dockerfile .

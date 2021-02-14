@@ -10,4 +10,4 @@ Environment Variables:
 
 | name      | required | description                                                 |
 | --------- | -------- | ----------------------------------------------------------- |
-| WORKSPACE | ✔        | workspace directory in mornorepo used as CWD in entry point |
+| WORKSPACE | ✔        | workspace directory in mornorepo used as CWD in entrypoint |
