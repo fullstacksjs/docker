@@ -4,10 +4,11 @@ COPY ./install-package.sh /install-package.sh
 RUN chmod +x /install-package.sh
 RUN /install-package.sh vim openssl
 
-RUN useradd --user-group --create-home app
-ENV HOME=/home/app
-WORKDIR $HOME
+ENV APP=/app
+RUN mkdir -p $APP
+WORKDIR $APP
 
+RUN npm install npm@7 --global
 RUN npm install lerna@3 --global
 RUN npm cache clean --force
 
