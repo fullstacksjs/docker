@@ -4,8 +4,8 @@ USER=fullstacksjs
 
 if [ -z "$1" ]; then
   echo "Error: please specify version"
-  exit 1
+  # exit 1
 fi
 
-docker build --tag $USER/lerna3:$1 -f ./lerna3/Dockerfile .
-docker build --tag $USER/lerna4:$1 -f ./lerna4/Dockerfile .
+docker build --tag $USER/lerna:15.12-slim -f ./lerna/Dockerfile .
+docker build --tag $USER/lerna:14.16-slim -f ./lerna/Dockerfile.lts .
