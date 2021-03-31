@@ -2,7 +2,7 @@ FROM node:15.12-slim
 
 COPY ./install-package.sh /install-package.sh
 RUN chmod +x /install-package.sh
-RUN /install-package.sh vim openssl
+RUN /install-package.sh vim openssl build-essential procps
 
 ENV APP=/app
 RUN mkdir -p $APP
