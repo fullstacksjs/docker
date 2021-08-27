@@ -1,4 +1,4 @@
-FROM node:14.16-slim
+FROM node:14.17-slim
 
 COPY ./install-package.sh /install-package.sh
 RUN chmod +x /install-package.sh
